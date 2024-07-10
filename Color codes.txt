@@ -1,0 +1,8 @@
+Background:#EEEADE
+Dark Brown:#35281E
+Light Brown:#B9502A
+Dark Green:#797301
+Light Green:#AEB107
+Red:#B62A18
+Red2:#C33F29
+Yellow:#F6D471
