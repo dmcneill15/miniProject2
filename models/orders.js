@@ -6,7 +6,7 @@ let orders = [
         "extraToppings": ["mushroom"],
         "quantity": 1,
         "drink": "Coke",
-        "status": "new"
+        "status": "complete"
       },
       {
         "id": 2,
