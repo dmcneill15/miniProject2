@@ -12,20 +12,21 @@ The API is able to fetch all and filtered orders, add new orders, edit exsiting 
 ```
 2. Install dependencies using:
 ```bash
-`npm install`
+    npm install
 ```
-3. Start the service using:
+3. Start the server using:
 ```bash
- `npm start` or `node index.js`
+    npm start OR
+    node index.js
 ```
 4. Open POSTMAN or similar and test the endpoints:
-    a. Get all orders:      GET http://localhost:3000/orders
-    b. Get filtered orders: GET http://localhost:3000/orders?status=new
-    c. Add a new order:     POST http://localhost:3000/orders
-    d. Update an order:     PUT http://localhost:3000/orders/4
-    e. Delete an order:     DELETE http://localhost:3000/orders/4
+   - Get all orders:      GET http://localhost:3000/orders
+   - Get filtered orders: GET http://localhost:3000/orders?status=new
+   - Add a new order:     POST http://localhost:3000/orders
+   - Update an order:     PUT http://localhost:3000/orders/4
+   - Delete an order:     DELETE http://localhost:3000/orders/4
 
-Order data model:
+### Order data model:
  ```json
 {
   "id": 1,
