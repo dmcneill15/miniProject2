@@ -48,4 +48,24 @@ router.post('/',(req,res)=>{
     res.status(200).json(newOrder);
 });
 
+router.put('/:id', (req,res)=>{
+    let orderId = parseInt(req.params.id);  //need to parseInt because req returns a string
+    let updatedOrder = req.body;
+
+    //search through the orders array to find the order that needs to be updated
+    let orderIndex = orders.findIndex(order => order.id == orderId);
+
+    if(orderIndex !== -1){
+        orders[orderIndex] = {...orders[orderIndex], ...updatedOrder};
+        res.status(200);
+        res.json({
+            result:`Updated order with id:${orderId}`,
+            data: updatedOrder
+        });
+    }
+    else{
+        res.status(404);
+        res.json({error: `Could not find order with id:${orderId}`});
+    }
+})
 module.exports = router;
