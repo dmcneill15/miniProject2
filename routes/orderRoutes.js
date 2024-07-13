@@ -67,6 +67,25 @@ router.put('/:id', (req,res)=>{
         res.status(404);
         res.json({error: `Could not find order with id:${orderId}`});
     }
+});
+
+router.delete('/:id', (req, res)=>{
+    let orderId = parseInt(req.params.id);
+
+    let orderIndex = orders.findIndex(order => order.id == orderId);
+
+    if(orderIndex !== -1){
+        orders.splice(orderIndex,1);
+        res.status(200);
+        res.json({
+            result:`Deleted order with id:${orderId}`,
+        });
+    }
+    else{
+        res.status(404);
+        res.json({error: `Could not find order with id:${orderId}`});
+    }
+
 })
 
 module.exports = router;
