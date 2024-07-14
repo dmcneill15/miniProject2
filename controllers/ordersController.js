@@ -45,7 +45,11 @@ const updateOrder = (req, res) => {
     let orderIndex = orders.findIndex(order => order.id == orderId);
 
     if (orderIndex !== -1) {
-        orders[orderIndex] = { ...orders[orderIndex], ...updatedOrder };
+        //adds the extra toppings instead of overwritting what was originally created
+        if(updatedOrder.extraToppings){
+            updatedOrder.extraToppings = [...new Set([...orders[orderIndex].extraToppings, ...updatedOrder.extraToppings])];
+        }
+        orders[orderIndex] = { ...orders[orderIndex], ...updatedOrder};
         res.status(200);
         res.json({
             result: `Updated order with id:${orderId}`,
