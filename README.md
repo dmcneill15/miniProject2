@@ -24,8 +24,8 @@ The API is able to fetch all and filtered orders, add new orders, edit exsiting 
    - Get all orders:      GET http://localhost:3000/orders
    - Get filtered orders: GET http://localhost:3000/orders?status=new
    - Add a new order:     POST http://localhost:3000/orders
-   - Update an order:     PUT http://localhost:3000/orders/4
-   - Delete an order:     DELETE http://localhost:3000/orders/4
+   - Update an order:     PUT http://localhost:3000/orders/3
+   - Delete an order:     DELETE http://localhost:3000/orders/3
 
 ### Order data model:
  ```json
