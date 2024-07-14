@@ -16,8 +16,9 @@ The API is able to fetch all and filtered orders, add new orders, edit exsiting 
 ```
 3. Start the server using:
 ```bash
-    npm start OR
     node index.js
+    OR if npm nodemon is installed, run: 
+    npm start
 ```
 4. Open POSTMAN or similar and test the endpoints:
    - Get all orders:      GET http://localhost:3000/orders
