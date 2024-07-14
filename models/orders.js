@@ -17,15 +17,6 @@ let orders = [
         "drink": "Sprite",
         "status": "new"
       },
-      {
-        "id": 3,
-        "customerName": "Prince George",
-        "pizzaType": "Margherita",
-        "extraToppings": ["pineapple", "ham", "cheese"],
-        "quantity": 1,
-        "drink": "Coke",
-        "status": "new"
-      }
 ]
 
 module.exports = orders;

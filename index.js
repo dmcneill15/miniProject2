@@ -7,9 +7,6 @@ const port = 3000;
 // parse requests of content-type - application/json (needed for POST and PUT requests using req.body)
 app.use(express.json());
 
-
-//app.listen(port, ()=>console.log(`Listening on port http://localhost:${port}`));
-
 app.use('/', express.static('public'));
 app.use('/orders', orderRoutes);
 
