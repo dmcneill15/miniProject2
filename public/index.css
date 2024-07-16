@@ -13,6 +13,12 @@ body {
   height: 14vh;
 }
 
+.nav-container img {
+  width: 9em; 
+  margin-top: 
+  50px;margin-left:50px;
+}
+
 ul {
   list-style: none;
   padding: 0px;
@@ -24,6 +30,10 @@ ul {
   gap: 20px;
   margin-left: 20px;
   margin-right: 120px;
+}
+
+.navlistleft > ul > li > a {
+  padding:2px;
 }
 
 .navlistright ul {
@@ -43,6 +53,11 @@ a {
 a:hover {
   color: #db472d;
   font-weight: 700;
+  text-decoration: none;
+}
+
+.navlistright a:hover i{
+  color: #db472d;
 }
 
 .title-container {
@@ -119,13 +134,21 @@ a:hover {
   text-decoration: underline;
 }
 
-.navlistleft a.active {
-  border-bottom: 2px solid #db472d;
-}
-
 .card{
   display:flex;
   border: 2px solid white;
+}
+
+.fa-solid{
+  color:black; 
+  font-size:1em; 
+  margin:10px;
+}
+
+.fa-icon-lg-red{
+  color:red;
+  font-size:1.5em; 
+  margin:0px;
 }
 
 @media only screen and (max-width: 671px) {

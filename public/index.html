@@ -6,7 +6,7 @@
     <meta name="keywords" content="HTML, CSS" />
     <meta name="author" content="D Mc Neill" />
     <title>Three Cheeses Online</title>
-    <link rel="stylesheet" href="index.css" />
+    <!--FONTS & ICONS-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -15,18 +15,28 @@
       href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD&display=swap"
       rel="stylesheet"
     />
-  </head>
-<body>
+    <!--BOOTSTRAP-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
+    <!--OWN CSS STYLING-->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+<body>
   <nav>
   <div class="nav-container">
-    <div><img src="/src/ThreeCheeseLogo.png" style="width: 9em; margin-top: 50px;margin-left:50px;" /></div>
+    <div><img src="/src/ThreeCheeseLogo.png"/></div>
     <div class="navlistleft">
       <ul>
-        <li><a style="padding:2px;" href="./index.html">Menu</a></li>
-        <li><a style="padding:2px;" href="./orders.html">Orders</a></li>
-        <li><a style="padding:2px;" href="./about.html">About</a></li>
-        <li><a style="padding:2px;" href="./contact.html">Contact Us</a></li>
+        <li><a href="./index.html">Menu</a></li>
+        <li><a href="./orders.html">Orders</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
       </ul>
     </div>
     <div class="navlistright">
@@ -51,7 +61,7 @@
   <div class="menuContent-Container">
     <div class="flex-card">
       <img src="/src/roma.png" class="pizza-image" alt="Top view image of a margherita pizza" /><br />
-      <span class="pizza-name">3 Cheese Special   <i class="fa-solid fa-fire" style="color:red; font-size:1.5em"></i></span><br />
+      <span class="pizza-name">3 Cheese Special   <i class="fa-solid fa-fire fa-icon-lg-red"></i></span><br />
       $24.99<br />
       <button type="button" class="btAddToCart">Add to Cart</button>
     </div>
@@ -75,7 +85,7 @@
     </div>
     <div class="flex-card">
       <img src="/src/spicey.png" class="pizza-image" alt="Top view image of a spicey pizza"/><br />
-      <span class="pizza-name">Spicey Slice   <i class="fa-solid fa-pepper-hot" style="color:red; font-size:1.5em"></i></span><br />
+      <span class="pizza-name">Spicey Slice   <i class="fa-solid fa-pepper-hot fa-icon-lg-red"></i></span><br />
       $21.99<br />
       <button type="button" class="btAddToCart">Add to Cart</button>
     </div>
