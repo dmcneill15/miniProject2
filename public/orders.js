@@ -6,15 +6,16 @@ function showNewOrders(orders) {
 }
 
 function populateOrderCard(order) {
-    const template = document.getElementById("card-template").content.cloneNode(true);
-    template.querySelector(".card-title").innerText = (`Order ID: ${order.id}`);
-    template.querySelector('.card-text-customer').innerText = (`Cusomer: ${order.customerName}`);
-    template.querySelector('.card-text-pizza').innerText = (`Pizza: ${order.pizzaType}`);
-    template.querySelector('.card-text-extras').innerText = (`Extra Toppings: ${order.extraToppings}`);
-    template.querySelector('.card-text-qty').innerText = (`Qty: ${order.quantity}`);
-    template.querySelector('.card-text-drink').innerText = (`Drink: ${order.drink}`);
-    template.querySelector('.card-text-status').innerText = (`Status: ${order.status}`);
-    return template;
+
+        const template = document.getElementById("card-template").content.cloneNode(true);
+        template.querySelector(".card-title").innerText = `Order ID: ${order.id}`;
+        template.querySelector(".card-customer").innerText = `Cusomer: ${order.customerName}`;
+        template.querySelector(".card-pizza").innerText = `Pizza: ${order.pizzaType}`;
+        template.querySelector(".card-extras").innerText = `Extra Toppings: ${order.extraToppings}`;
+        template.querySelector(".card-qty").innerText = `Qty: ${order.quantity}`;
+        template.querySelector(".card-drink").innerText = `Drink: ${order.drink}`;
+        template.querySelector(".card-status").innerText = `Status: ${order.status}`;
+        return template;
 }
 
 window.onload = function () {
